@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Backend for CodeForge",
   "main": "index.js",
+  "type": "module",
   "scripts": {
+    "start": "nodemon index.js",
     "test": "jest"
   },
   "author": "",
@@ -14,6 +16,7 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
+    "nodemon": "^2.0.14",
     "jest": "^27.3.1"
   }
 }
