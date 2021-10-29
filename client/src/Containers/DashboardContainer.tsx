@@ -1,18 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import ProfileContainer from './ProfileContainer';
-
+import { viewContext } from './AppContainer';
 
 import SearchBar from '../Components/SearchBar'
 import BoardContainer from './BoardContainer';
 
 const DashboardContainer = () => {
-  const [view, setView] = useState('home');
+
+  const { view } = useContext<any>(viewContext)
+
   return (
     <div className="w-full bg-mint-default">
      {/* <SidebarContainer />
       <button onClick={() => setView('profile')}>Profile</button>
       {view === 'profile' ? <ProfileContainer /> : ''} */}
-      <BoardContainer />
+      {view === 'profile' && <ProfileContainer />}
+      {view ==='dashboard' && <BoardContainer /> }
 
     </div>
   );

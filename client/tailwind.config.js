@@ -28,6 +28,14 @@ module.exports = {
       yellow: {
         default: "#E9D7A8",
       },
+      white: {
+        default: "#FFFFFF",
+        cream: "#fdfcfc",
+      },
+      black: {
+        default: "#000000",
+        slate: "#303134",
+      },
     },
   },
   variants: {
