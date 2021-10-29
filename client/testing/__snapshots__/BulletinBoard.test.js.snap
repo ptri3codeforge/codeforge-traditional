@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BulletinBoard should be type of object 1`] = `<div />`;
+
+exports[`Component should match snapshot 1`] = `<div />`;
