@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { updateBio } from '../redux/reducers/user';
 
 const ProfileContainer = () => {
-  // @ts-ignore: Unreachable code error
+  //@ts-ignore: Unreachable code error
   const { userName, userBio } = useSelector((state) => state.user);
   const dispatch = useDispatch();
 
