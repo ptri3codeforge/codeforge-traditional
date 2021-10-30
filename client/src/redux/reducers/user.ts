@@ -57,7 +57,7 @@ const initialState: UserState = {
   userName: 'Test',
   userBio: 'This is the test users Bio',
   firstName: 'Charlie',
-  lastName: 'M.',
+  lastName: 'Malave',
   city: 'New York, NY',
   skillLevel: 'Senior Developer',
   role: 'Software Engineer @ RediQLess',
@@ -95,6 +95,23 @@ export const userSlice = createSlice({
       state.lastName = action.payload.lastName;
       state.city = action.payload.city;
       state.skillLevel = action.payload.skillLevel;
+      state.role = action.payload.role;
+      state.openTo = action.payload.openTo;
+      state.skill1 = action.payload.skill1;
+      state.skill2 = action.payload.skill2;
+      state.skill3 = action.payload.skill3;
+      state.about = action.payload.about;
+      state.highlightLink1 = action.payload.highlightLink1;
+      state.highlightTitle1 = action.payload.highlightTitle1;
+      state.highlightLink2 = action.payload.highlightLink2;
+      state.highlightTitle2 = action.payload.highlightTitle2;
+      state.highlightLink3 = action.payload.highlightLink3;
+      state.highlightTitle3 = action.payload.highlightTitle3;
+      state.highlightLink4 = action.payload.highlightLink4;
+      state.highlightTitle4 = action.payload.highlightTitle4;
+      state.ghLink = action.payload.ghLink;
+      state.liLink = action.payload.liLink;
+      state.twLink = action.payload.twLink;
       
 
 
