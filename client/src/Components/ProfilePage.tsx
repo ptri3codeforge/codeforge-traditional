@@ -1,7 +1,8 @@
 import React, { useState }  from 'react'
 import { useSelector, useDispatch } from 'react-redux';
 import { updateBio } from '../redux/reducers/user';
-import {BiMap} from 'react-icons/bi'
+import {BiMap, BiMessageSquareDots} from 'react-icons/bi'
+
 
 
 
@@ -11,6 +12,7 @@ const ProfilePage = () => {
   const dispatch = useDispatch();
 
   const [bio, setbio] = useState('');
+
     return (
         <div>
         
@@ -115,37 +117,37 @@ const ProfilePage = () => {
             <div className="flex flex-wrap justify-center">
               <div className="w-full lg:w-9/12 px-4">
                 <h1 className="text-2xl font-bold text-blue-default mb-2">Highlight Reel</h1>
-
                 <div>
+               
+                {/* HIGHLIGHT REEL LINKS*/}
                 <div className="w-full flex flex-col justify-evenly mb-2 ">
-                  
                   <div className="transform transition duration-500 hover:scale-110 text-center mx-20 text-white-cream  bg-darkBlue-default shadow-2xl rounded-lg border-blue-light border-4 mb-4">
-                    <a href="https://medium.com/@iankimjudd/introducing-rediqless-a-caching-tool-for-graphql-apis-e4846302f040">
+                    <a href="https://medium.com/@iankimjudd/introducing-rediqless-a-caching-tool-for-graphql-apis-e4846302f040" target="_blank">
                     <h1 className="p-2">RediQLess Medium Article</h1>
                     </a>
                   </div>
 
                   <div className="transform transition duration-500 hover:scale-110 text-center mx-20 text-white-cream  bg-darkBlue-default shadow-2xl rounded-lg border-blue-light border-4 mb-4">
-                    <a href="https://charliemalave.com/">
+                    <a href="https://charliemalave.com/" target="_blank">
                     <h1 className="p-2">Portfolio Website</h1>
                     </a>
                   </div>
 
                   <div className="transform transition duration-500 hover:scale-110 text-center mx-20 text-white-cream  bg-darkBlue-default shadow-2xl rounded-lg border-blue-light border-4 mb-4">
-                    <a href="https://anchor.fm/javaunscripted">
-                    <h1 className="p-2">JavaUnsscripted (Podcast)</h1>
+                    <a href="https://anchor.fm/javaunscripted" target="_blank">
+                    <h1 className="p-2">JavaUnscripted (Podcast)</h1>
                     </a>
                   </div>
 
                   <div className="transform transition duration-500 hover:scale-110 text-center mx-20 text-white-cream  bg-darkBlue-default shadow-2xl rounded-lg border-blue-light border-4 mb-4">
-                    <a href="https://www.canva.com/design/DAEsnmc1EOA/sl6ZPcmhpVmcsKb3mKsHtA/view">
+                    <a href="https://www.canva.com/design/DAEsnmc1EOA/sl6ZPcmhpVmcsKb3mKsHtA/view" target="_blank">
                     <h1 className="p-2">Serverless Arcitecture W/AWS Lambda Tech Talk</h1>
                     </a>
                   </div>
-
                   </div>
-
                 </div>
+
+
               </div>
             </div>
           </div>
@@ -154,14 +156,38 @@ const ProfilePage = () => {
             <div className="flex flex-wrap justify-center">
               <div className="w-full lg:w-9/12 px-4">
                 <h1 className="text-2xl font-bold text-blue-default">Connect</h1>
-                <ul className="mb-4 text-lg leading-relaxed text-darkBlue-default">
-                <a href="https://github.com/cmalave13"/>
+
+                {/* CONNECTION LINKS*/}
+                <div className="flex flex-row justify-center">
+                <ul className="mb-4 text-lg leading-relaxed text-darkBlue-default mx-6"> 
+                  <a href="https://github.com/cmalave13" target="_blank">Github</a>
                 </ul>
-                
+                <ul className="mb-4 text-lg leading-relaxed text-darkBlue-default mx-6"> 
+                  <a href="https://www.linkedin.com/in/charlesmalave/" target="_blank">LinkdIn</a>
+                </ul>
+                <ul className="mb-4 text-lg leading-relaxed text-darkBlue-default mx-6"> 
+                  <a href="https://twitter.com/maxxatlast" target="_blank">Twitter</a>
+                </ul>
+              </div>
+
+
+                  {/* MESSAGE USER */}
+                <div className="flex flex-col justify-items-center">
+                  <div className="transform transition duration-500 hover:scale-110 text-center mx-60 text-white-cream  bg-darkBlue-default shadow-2xl rounded-lg border-blue-light border-4 mb-4 ">
+                    <a href="#">
+                      <div className="flex flex-wrap justify-center text-2xl -mb-2">
+                      <BiMessageSquareDots/>
+                      </div>
+                    <h1 className="p-2">MESSAGE</h1>
+                    </a>
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>
 
+          <h1>EDIT PROFILE</h1>
 
         </div>
       </div>
