@@ -31,7 +31,7 @@ key={i}
          <div className="flex relative items-center justify-between ">
             <h2 className="text-med relative text-gray-900 -mt-1">{el.author}</h2>
          <div className="relative">
-         <small className="text-sm text-gray-700 absolute -top-3 -right-40">22h ago</small>
+         <small className="text-sm text-gray-700 right-full">22h ago</small>
          </div>
             
          </div>

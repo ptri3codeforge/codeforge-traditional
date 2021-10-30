@@ -1,6 +1,6 @@
 import React, { useState }  from 'react'
-import { useSelector, useDispatch } from 'react-redux';
-import { updateBio } from '../redux/reducers/user';
+//import { useSelector, useDispatch } from 'react-redux';
+//import { updateBio } from '../redux/reducers/user';
 import {BiMap, BiMessageSquareDots} from 'react-icons/bi'
 
 
@@ -8,10 +8,10 @@ import {BiMap, BiMessageSquareDots} from 'react-icons/bi'
 
 const ProfilePage = () => {
       //@ts-ignore: Unreachable code error
-  const { userName, userBio } = useSelector((state) => state.user);
-  const dispatch = useDispatch();
+ // const { userName, userBio } = useSelector((state) => state.user);
+  //const dispatch = useDispatch();
 
-  const [bio, setbio] = useState('');
+ // const [bio, setbio] = useState('');
 
     return (
         <div>
