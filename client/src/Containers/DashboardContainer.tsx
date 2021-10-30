@@ -10,7 +10,7 @@ const DashboardContainer = () => {
   const { view } = useContext<any>(viewContext)
 
   return (
-    <div className="w-full bg-white-default">
+    <div className="w-1/2 max-h-screen bg-white-default">
      {/* <SidebarContainer />
       <button onClick={() => setView('profile')}>Profile</button>
       {view === 'profile' ? <ProfileContainer /> : ''} */}
