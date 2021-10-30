@@ -37,7 +37,14 @@ module.exports = {
         slate: "#303134",
       },
     },
+
+    extend: {
+      outline: {
+        yellow: "2px solid #E9D7A8",
+      },
+    },
   },
+
   variants: {
     extend: {
       animation: ["hover", "group-hover", "motion-safe"],

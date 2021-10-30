@@ -6,6 +6,7 @@ import SidebarContainer from './SidebarContainer'
 
 export const viewContext = React.createContext<any>('default');
 
+
 const AppContainer = () => {
     const [view, setView] = useState('default');
 

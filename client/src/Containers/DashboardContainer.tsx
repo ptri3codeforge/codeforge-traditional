@@ -10,12 +10,12 @@ const DashboardContainer = () => {
   const { view } = useContext<any>(viewContext)
 
   return (
-    <div className="w-full bg-mint-default">
+    <div className="w-full bg-white-default">
      {/* <SidebarContainer />
       <button onClick={() => setView('profile')}>Profile</button>
       {view === 'profile' ? <ProfileContainer /> : ''} */}
       {view === 'profile' && <ProfileContainer />}
-      {view ==='dashboard' && <BoardContainer /> }
+      {view === 'bulletin' && <BoardContainer /> }
 
     </div>
   );
