@@ -16,7 +16,7 @@ const ProfilePage = () => {
  console.log(`Edit is ${edit}`)
 
     return (
-        <div>
+        <div className="h-full">
         
             {/* <h1>User name:{userName}</h1>
              <h1>User Bio:{userBio}</h1>

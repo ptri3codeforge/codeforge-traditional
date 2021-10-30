@@ -11,7 +11,7 @@ const AppContainer = () => {
     const [view, setView] = useState('default');
 
     return (
-        <div className="flex flex row">
+        <div className="flex flex row h-full">
             <viewContext.Provider value={{view, setView}}>
                 <SidebarContainer />
                 <DashboardContainer />
