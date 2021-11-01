@@ -8,7 +8,7 @@ const SideBarComponents = () => {
   const { setView } = useContext<any>(viewContext)
 
     return (
-        <div className="bg-blue-light rounded-r-3xl">
+        <div className="bg-blue-light rounded-r-3xl h-full">
 <div className="min-h-screen flex flex-row bg-gray-100">
   <div className="flex flex-col w-56  rounded-r-3xl overflow-hidden">
     <div className="flex items-center justify-center h-20 shadow-md">
