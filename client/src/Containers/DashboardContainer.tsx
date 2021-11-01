@@ -4,6 +4,7 @@ import { viewContext } from './AppContainer';
 
 import SearchBar from '../Components/SearchBar'
 import BoardContainer from './BoardContainer';
+import JobContainer from './JobContainer'
 
 const DashboardContainer = () => {
 
@@ -16,7 +17,7 @@ const DashboardContainer = () => {
       {view === 'profile' ? <ProfileContainer /> : ''} */}
       {view === 'profile' && <ProfileContainer />}
       {view === 'bulletin' && <BoardContainer /> }
-
+      {view === 'jobs' && <JobContainer />}
     </div>
   );
 };
