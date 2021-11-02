@@ -19,7 +19,7 @@ const JobBoard = () => {
             //     </div>
             //     </div>
             // </div>
-<div className="overflow-auto w-full h-4/6">
+<div className="overflow-auto w-full">
 {BulletinData.map((el, i) => (
 <div className={`flex bg-white-default
  cursor-pointer shadow-lg w-full hover:bg-mint-default`} 

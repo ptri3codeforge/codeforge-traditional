@@ -3,7 +3,7 @@ import PostContent from '../Components/PostContent';
 
 const PostContainer = () => {
     return (
-        <div className='bg-white row-start-1 row-end-3'>
+        <div className='bg-white row-start-1 row-end-3 w-1/2 h-screen bg-white-default overflow-auto'>
             <PostContent />
         </div>
     )

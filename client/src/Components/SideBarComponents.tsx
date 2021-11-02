@@ -20,7 +20,7 @@ const SideBarComponents = () => {
           <span className="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400">
               <BiHome />
               </span>
-          <span className="text-sm font-medium">Dashboard</span>
+          <span className="text-xl font-semibold text-white-default">Dashboard</span>
         </a>
       </li>
       <li>
@@ -28,7 +28,7 @@ const SideBarComponents = () => {
           <span className="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400">
               <BiChalkboard />
           </span>
-          <span className="text-sm font-medium">Bulletin Board</span>
+          <span className="text-xl font-semibold text-white-default">Bulletin Board</span>
         </a>
       </li>
       <li>
@@ -36,7 +36,7 @@ const SideBarComponents = () => {
           <span className="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400">
               <BiNews />
             </span>
-          <span className="text-sm font-medium">Job Board</span>
+          <span className="text-xl font-semibold text-white-default">Job Board</span>
         </a>
       </li>
       <li>
@@ -44,7 +44,7 @@ const SideBarComponents = () => {
           <span className="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400">
               <BiMessageRounded/>
               </span>
-          <span className="text-sm font-medium">Messages</span>
+          <span className="text-xl font-semibold text-white-default">Messages</span>
         </a>
       </li>
 
@@ -53,7 +53,7 @@ const SideBarComponents = () => {
           <span className="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400">
               <BiUserCircle/>
               </span>
-          <span className="text-sm font-medium">Profile</span>
+          <span className="text-xl font-semibold text-white-default">Profile</span>
         </a>
       </li>
       <li>
@@ -61,15 +61,15 @@ const SideBarComponents = () => {
           <span className="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400">
               <BiNotification/>
               </span>
-          <span className="text-sm font-medium">Notifications</span>
-          <span className="ml-auto mr-6 text-sm bg-red-100 rounded-full px-3 py-px text-red-500">5</span>
+          <span className="text-xl font-semibold text-white-default">Notifications</span>
+          <span className="ml-auto mr-6 text-med bg-red-100 text-yellow-default rounded-full px-3 py-px text-red-500">5</span>
         </a>
       </li>
       <li>
         <a href="#" className="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-darkBlue-default hover:text-yellow-default">
           <span className="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400">
               <BiLogOut/></span>
-          <span className="text-sm font-medium">Logout</span>
+          <span className="text-xl font-semibold text-white-default">Logout</span>
         </a>
       </li>
     </ul>

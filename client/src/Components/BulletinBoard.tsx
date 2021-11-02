@@ -12,9 +12,9 @@ const BulletinBoard = () => {
 
     return (
 
-      <div className="w-full h-4/5 bg-yellow-default rounded-lg m-8 ">
+      <div className="w-full h-4/5 bg-yellow-default rounded-lg m-8">
       
-      <div className="rounded-lg bg-yellow-default flex flex-wrap content-evenly ">
+      <div className="rounded-lg bg-yellow-default flex flex-wrap content-evenly">
       {BulletinData.map((el, i) => (
          <div className={`flex ${clicked ? `bg-yellow-default text-white-default` : `bg-white-default`}  border-8 m-2 border-white-default rounded-lg  cursor-pointer shadow-lg w-full hover:bg-white-default`} 
          key={i}
