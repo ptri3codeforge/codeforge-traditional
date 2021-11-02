@@ -3,6 +3,7 @@ import BoardContainer from './BoardContainer'
 
 import DashboardContainer from './DashboardContainer'
 import SidebarContainer from './SidebarContainer'
+import PostContainer from './PostContainer'
 
 export const viewContext = React.createContext<any>('default');
 
@@ -15,6 +16,7 @@ const AppContainer = () => {
             <viewContext.Provider value={{view, setView}}>
                 <SidebarContainer />
                 <DashboardContainer />
+                <PostContainer /> 
             </viewContext.Provider>
         </div>
     )
