@@ -4,6 +4,7 @@ import BoardContainer from './BoardContainer'
 import DashboardContainer from './DashboardContainer'
 import SidebarContainer from './SidebarContainer'
 import PostContainer from './PostContainer'
+import LoginContainer from './LoginContainer';
 
 export const viewContext = React.createContext<any>('default');
 
@@ -14,9 +15,10 @@ const AppContainer = () => {
     return (
         <div className="flex flex row h-full">
             <viewContext.Provider value={{view, setView}}>
+                {/* <LoginContainer /> */}
                 <SidebarContainer />
                 <DashboardContainer />
-                <PostContainer /> 
+                {/* <PostContainer />  */}
             </viewContext.Provider>
         </div>
     )
