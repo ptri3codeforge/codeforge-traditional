@@ -1,6 +1,6 @@
-import React, { useState }  from 'react'
+import React, { useState, useEffect }  from 'react'
 import { useSelector, useDispatch } from 'react-redux';
-import { updateBio } from '../redux/reducers/user';
+import { initUser } from '../redux/reducers/user';
 import {BiMap, BiMessageSquareDots, BiWrench, BiEdit} from 'react-icons/bi'
 
 
@@ -20,7 +20,14 @@ const ProfilePage = () => {
  const [editHighlight3, setHighlight3] = useState(false);
  const [editHighlight4, setHighlight4] = useState(false);
 
- console.log(`Edit is ${edit}`);
+      //@ts-ignore: Unreachable code error
+  const [editUser, setEditUser] = useState(useSelector((state) => state.user))
+  useEffect(() => {
+    console.log(editUser)
+    
+  }, [editUser])
+
+ //console.log(`Edit is ${edit}`);
 
  const myRef = React.useRef(null)
 
@@ -86,11 +93,11 @@ const ProfilePage = () => {
               {edit === true ?  
               <form>
                 <input
-                 defaultValue={firstName}
+                 defaultValue={editUser.firstName}
                   className="border text-center border-blue-light bg-yellow-default rounded-lg h-8"
-                  // onChange={(e) => {
-                  // setbio(e.target.value);
-                  //  }}
+                  onChange={(e) => {
+                  setEditUser({...editUser, firstName : e.target.value});
+                   }}
                 />
               </form> 
               
@@ -474,7 +481,9 @@ const ProfilePage = () => {
             <h1 className="mx-4 ">EDIT PROFILE</h1>
           </div>
          </button>
-         {edit === true ? <button className="text-white-default  bg-blue-light shadow-2xl rounded-lg border-darkBlue-default border-4 mb-4"  >
+         {edit === true ? <button className="text-white-default  bg-blue-light shadow-2xl rounded-lg border-darkBlue-default border-4 mb-4" onClick={() => {
+           dispatch(initUser(editUser))
+         }} >
           <div className="flex flex-row ">
             <BiWrench className="-mr-2 my-1 "/>
             <h1 className="mx-4 ">SAVE CHANGES</h1>

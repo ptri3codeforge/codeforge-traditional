@@ -11,31 +11,28 @@ const BulletinBoard = () => {
     }
 
     return (
-            // <div>
-            //     <div classNameName='mr-5 p-5 shadow-sm'>
-            //     <h1 classNameName='block text-lg font-medium'>Subject</h1> 
-            //     <div>
-            //     <p classNameName='block m-0 text-m'>Description</p>
-            //     </div>
-            //     </div>
-            // </div>
-      <div className="overflow-auto w-full h-4/5  rounded-lg mt-2 ">
+
+      <div className="w-full h-4/5 bg-yellow-default  border rounded-lg m-8">
+      
+      <div className="rounded-lg bg-yellow-default">
       {BulletinData.map((el, i) => (
-         <div className={`flex ${clicked ? `bg-yellow-default text-white-default` : `bg-white-default`} cursor-pointer shadow-lg w-full hover:bg-yellow-default`} 
+         <div className={`flex ${clicked ? `bg-yellow-default text-white-default` : `bg-white-default`}  border  m-2 rounded-lg  cursor-pointer shadow-lg w-full hover:bg-blue-light`} 
          key={i}
          // onClick={() => isClicked(true)}
          >
          <div className="flex items-start px-20 py-2  hover:text-white-default">
             <img className="w-12 h-12 rounded-full object-cover mt-1 mr-4 shadow" src="https://images.unsplash.com/photo-1542156822-6924d1a71ace?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="avatar" />
+            
             <div className="">
                <div className="flex relative items-center justify-between ">
                   <h2 className="text-med relative text-gray-900">{el.author}</h2>   
                </div>
-               <small className="text-xs text-gray-700">22h ago</small>
+               <small className="text-xs text-gray-700">22h ago {/*how long since  post*/}</small>
       
 
-               <p className= "mt-1 text-gray-700 font-medium text-2xl">
-                  {el.subject}
+               <p className= "mt-1 font-medium text-2xl text-center bg-yellow-default ">
+                  {/* {el.subject} */}
+                  THE TITLE OF THE POST
                </p>
       
                <div className= "mt-2 mb-2 flex items-center">
@@ -51,8 +48,10 @@ const BulletinBoard = () => {
                </div>
             </div>
          </div>
+         
       </div>
       ))}
+         </div>
       </div>
     )
 }

@@ -125,6 +125,6 @@ export const userSlice = createSlice({
 });
 
 // Action creators are generated for each case reducer function
-export const { updateBio } = userSlice.actions;
+export const { updateBio, initUser } = userSlice.actions;
 
 export default userSlice.reducer;
