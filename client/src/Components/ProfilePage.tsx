@@ -482,7 +482,7 @@ const ProfilePage = () => {
           </div>
          </button>
          {edit === true ? <button className="text-white-default  bg-blue-light shadow-2xl rounded-lg border-darkBlue-default border-4 mb-4" onClick={() => {
-           dispatch(initUser(editUser))
+           /*dispatch(initUser(editUser))*/
          }} >
           <div className="flex flex-row ">
             <BiWrench className="-mr-2 my-1 "/>
