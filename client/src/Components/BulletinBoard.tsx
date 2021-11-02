@@ -27,23 +27,26 @@ const BulletinBoard = () => {
                <div className="flex relative">
                   <h2 className="text-med">{el.author}</h2>   
                </div>
-               <small className="text-xs ">22h ago {/*how long since  post*/}</small>
+               <small className="text-xs ">
+                  {Math.floor(Math.floor((Date.now() - el.posttime) / 1000) / 60) > 90 ? 
+                  `${Math.floor(Math.floor(Math.floor((Date.now() - el.posttime) / 1000) / 60)) / 60}h ago`
+                  : `${Math.floor(Math.floor((Date.now() - el.posttime) / 1000) / 60)}m ago`
+               }
+               </small>
       
 
                <p className= " mt-1 font-medium text-2xl text-center ">
-                  {/* {el.subject} */}
-                  THE TITLE OF THE POST
+                  {el.subject}
+                  
                </p>
       
                <div className= "flex justify-between  mt-2 mb-2 flex items-center">
                   <div className="flex mr-10 text-gray-700 text-sm">
-                     <svg fill="none" viewBox="0 0 24 24"  className="w-4 h-4 mr-1" stroke="currentColor" onClick={() => {setLikeCount(likeCount + 1)}}>
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
-                      </svg>
-                     <span>{likeCount}</span>
+                     
+                     <span>{el.resolved === true? <h1><span className="text-resolved-default">◉ </span>Resolved</h1> : <h1><span className="text-open-default">◉ </span>Open</h1>}</span>
                   </div>
                   <div className="flex mr-2 text-gray-700 text-sm mr-8">
-                     <span>#React</span>
+                     <span className="text-lg">#{el.hashtag[0]}</span>
                   </div>
                </div>
             </div>

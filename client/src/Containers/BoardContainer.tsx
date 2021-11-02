@@ -1,7 +1,7 @@
 import React from "react";
 import BulletinBoard from "../Components/BulletinBoard";
 import SearchBar from "../Components/SearchBar";
-
+import AddPost from "../Components/AddPost";
 const BoardContainer = () => {
 
     return (
@@ -18,6 +18,7 @@ const BoardContainer = () => {
             <div className="flex items-center justify-center w-full">
             <BulletinBoard />
             </div>
+            <AddPost />
             </div>
         </div>
         
